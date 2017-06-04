@@ -9,5 +9,6 @@
         <page name='Group Of Tasks Challenge'/>
         <page name='Operation'/>
         <page name='Operation Challenge'/>
+        <page name='OperationQueue'/>
     </pages>
 </playground>

@@ -38,15 +38,6 @@ duration {
 //: Allows you more control over precisely what the `Operation` is doing
 let inputImage = UIImage(named: "dark_road_small.jpg")
 // TODO: Create and run TiltShiftOperation
-class TiltShiftOperation: Operation {
-	var inputImage: UIImage?
-	var outputImage: UIImage?
-	
-	override func main() {
-		outputImage = tiltShift(image: inputImage)
-	}
-}
-
 let tsOp = TiltShiftOperation()
 tsOp.inputImage = inputImage
 

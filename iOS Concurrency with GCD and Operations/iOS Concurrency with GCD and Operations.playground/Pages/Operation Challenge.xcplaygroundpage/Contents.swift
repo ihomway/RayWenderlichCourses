@@ -1,7 +1,6 @@
 //: [Previous](@previous)
-
 import Foundation
 
-var str = "Hello, playground"
+//: find this challenge project in folder **OperationChallenge**
 
 //: [Next](@next)
