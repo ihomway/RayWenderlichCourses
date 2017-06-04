@@ -13,5 +13,7 @@
         <page name='OperationQueue Challenge'/>
         <page name='AsyncOperation'/>
         <page name='AsyncOperation  Challenge'/>
+        <page name='Dependencies'/>
+        <page name='Dependencies Challenge'/>
     </pages>
 </playground>
