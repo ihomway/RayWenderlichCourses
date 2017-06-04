@@ -15,5 +15,7 @@
         <page name='AsyncOperation  Challenge'/>
         <page name='Dependencies'/>
         <page name='Dependencies Challenge'/>
+        <page name='Canceling Tasks'/>
+        <page name='Canceling Tasks Challenge'/>
     </pages>
 </playground>
