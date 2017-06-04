@@ -5,5 +5,9 @@
         <page name='Terminology Challenge'/>
         <page name='Simple Use Cases'/>
         <page name='Simple Use Cases Challenge'/>
+        <page name='Group Of Tasks '/>
+        <page name='Group Of Tasks Challenge'/>
+        <page name='Operation'/>
+        <page name='Operation Challenge'/>
     </pages>
 </playground>
