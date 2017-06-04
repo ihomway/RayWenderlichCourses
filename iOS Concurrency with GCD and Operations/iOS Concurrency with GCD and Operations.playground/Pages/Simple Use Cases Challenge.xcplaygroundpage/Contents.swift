@@ -28,7 +28,12 @@ duration {
 	for image in images {
 		// TODO: Call asyncTiltShift to transform each image, and store the output in tiltShiftedImages
 		// Note: Playgrounds use the default global queue instead of the main queue.
-		
+		asyncTiltShift(image, runQueue: workerQueue, completionQueue: DispatchQueue.global()) { image in
+			
+			if let image = image {
+				tiltShiftedImages.append(image)
+			}
+		}
   
 	}
 }
