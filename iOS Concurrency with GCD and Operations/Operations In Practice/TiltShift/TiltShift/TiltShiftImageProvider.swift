@@ -36,13 +36,17 @@ class TiltShiftImageProvider {
 		let imageDecompress = ImageDecompressionOperation(data: nil)
 		let tiltShift = TiltShiftOperation(image: nil)
 		let filterOutput = ImageFilterOutputOperation(completion: completion)
+		let process = PostProcessImageOperation(image: nil);
+		
+		let operations = [dataLoad, imageDecompress, tiltShift, process, filterOutput]
 		
 		// add dependencies
-		filterOutput.addDependency(tiltShift)
+		filterOutput.addDependency(process)
+		process.addDependency(tiltShift)
 		tiltShift.addDependency(imageDecompress)
 		imageDecompress.addDependency(dataLoad)
 		
-		operationQueue.addOperations([dataLoad, imageDecompress, tiltShift, filterOutput], waitUntilFinished: false)
+		operationQueue.addOperations(operations, waitUntilFinished: false)
 	}
 	
 	func cancel() {

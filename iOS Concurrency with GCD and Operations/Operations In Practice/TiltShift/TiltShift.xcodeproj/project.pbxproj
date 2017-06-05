@@ -37,6 +37,7 @@
 		4026D7ED1DC42495003DA9EF /* ImageFilterOutputOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026D7E71DC42495003DA9EF /* ImageFilterOutputOperation.swift */; };
 		4026D7EE1DC42495003DA9EF /* DataLoadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026D7E81DC42495003DA9EF /* DataLoadOperation.swift */; };
 		4026D7EF1DC42495003DA9EF /* ImageDecompressionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026D7E91DC42495003DA9EF /* ImageDecompressionOperation.swift */; };
+		CD717AB01EE5277A00792035 /* PostProcessImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD717AAF1EE5277A00792035 /* PostProcessImageOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		4026D7E71DC42495003DA9EF /* ImageFilterOutputOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterOutputOperation.swift; sourceTree = "<group>"; };
 		4026D7E81DC42495003DA9EF /* DataLoadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoadOperation.swift; sourceTree = "<group>"; };
 		4026D7E91DC42495003DA9EF /* ImageDecompressionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDecompressionOperation.swift; sourceTree = "<group>"; };
+		CD717AAF1EE5277A00792035 /* PostProcessImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostProcessImageOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				4026D7E91DC42495003DA9EF /* ImageDecompressionOperation.swift */,
 				4026D7E61DC42495003DA9EF /* TiltShiftOperation.swift */,
 				4026D7E71DC42495003DA9EF /* ImageFilterOutputOperation.swift */,
+				CD717AAF1EE5277A00792035 /* PostProcessImageOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				22E6E6541BFC5C3100815B9E /* TiltShiftImage.swift in Sources */,
 				4026D7EC1DC42495003DA9EF /* TiltShiftOperation.swift in Sources */,
 				4026D7ED1DC42495003DA9EF /* ImageFilterOutputOperation.swift in Sources */,
+				CD717AB01EE5277A00792035 /* PostProcessImageOperation.swift in Sources */,
 				22E6E6371BFC258C00815B9E /* Compressor.swift in Sources */,
 				4026D7EF1DC42495003DA9EF /* ImageDecompressionOperation.swift in Sources */,
 				22E6E61E1BFC233F00815B9E /* AppDelegate.swift in Sources */,
