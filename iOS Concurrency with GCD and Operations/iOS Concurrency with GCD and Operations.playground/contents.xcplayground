@@ -17,5 +17,7 @@
         <page name='Dependencies Challenge'/>
         <page name='Canceling Tasks'/>
         <page name='Canceling Tasks Challenge'/>
+        <page name='Concurrency Solutions'/>
+        <page name='Concurrency Solutions Challenge'/>
     </pages>
 </playground>
