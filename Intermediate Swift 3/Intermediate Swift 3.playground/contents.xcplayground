@@ -3,6 +3,8 @@
     <pages>
         <page name='Closures'/>
         <page name='Closures Challenge'/>
+        <page name='Stuctures'/>
+        <page name='Stuctures Challenge'/>
         <page name='Classes Challenge'/>
         <page name='Classes'/>
         <page name='Enumerations Challenge'/>
@@ -15,7 +17,5 @@
         <page name='Properties'/>
         <page name='Protocols Challenge'/>
         <page name='Protocols'/>
-        <page name='Stuctures Challenge'/>
-        <page name='Stuctures'/>
     </pages>
 </playground>
