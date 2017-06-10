@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Closures'/>
+        <page name='Closures Challenge'/>
+        <page name='Classes Challenge'/>
+        <page name='Classes'/>
+        <page name='Enumerations Challenge'/>
+        <page name='Enumerations'/>
+        <page name='Inheritance Challenge'/>
+        <page name='Inheritance'/>
+        <page name='Initializers Challenge'/>
+        <page name='Initializers'/>
+        <page name='Properties Challenge'/>
+        <page name='Properties'/>
+        <page name='Protocols Challenge'/>
+        <page name='Protocols'/>
+        <page name='Stuctures Challenge'/>
+        <page name='Stuctures'/>
+    </pages>
+</playground>
