@@ -13,9 +13,9 @@
         <page name='Inheritance Challenge'/>
         <page name='Initializers'/>
         <page name='Initializers Challenge'/>
+        <page name='Protocols'/>
+        <page name='Protocols Challenge'/>
         <page name='Enumerations'/>
         <page name='Enumerations Challenge'/>
-        <page name='Protocols Challenge'/>
-        <page name='Protocols'/>
     </pages>
 </playground>
