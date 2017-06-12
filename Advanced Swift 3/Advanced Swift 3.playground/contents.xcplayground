@@ -3,31 +3,31 @@
     <pages>
         <page name='Protocol-Oriented Programming'/>
         <page name='Protocol-Oriented Programming Challenge'/>
-				<page name='Custom Operators'/>
-        <page name='Untitled Page 4'/>
-				<page name='Protocols and Generics'/>
+        <page name='Custom Operators'/>
+        <page name='Custom Operators Challenge'/>
+        <page name='Untitled Page 5'/>
         <page name='Untitled Page 6'/>
-				<page name='Values and References'/>
+        <page name='Untitled Page 7'/>
         <page name='Untitled Page 8'/>
-				<page name='Implementing Copy-on-Write'/>
+        <page name='Untitled Page 9'/>
         <page name='Untitled Page 10'/>
-				<page name='Custom Sequences'/>
+        <page name='Untitled Page 11'/>
         <page name='Untitled Page 12'/>
-				<page name='Custom Collections'/>
+        <page name='Untitled Page 13'/>
         <page name='Untitled Page 14'/>
-				<page name='Ranges'/>
+        <page name='Untitled Page 15'/>
         <page name='Untitled Page 16'/>
-				<page name='Types as Documentation'/>
-				<page name='Untitled Page 17'/>
-				<page name='ARC with Objects'/>
+        <page name='Untitled Page 17'/>
+        <page name='Untitled Page 18'/>
         <page name='Untitled Page 19'/>
-				<page name='ARC with Closures'/>
+        <page name='Untitled Page 20'/>
         <page name='Untitled Page 21'/>
-				<page name='Unsafe Memory Access'/>
+        <page name='Untitled Page 22'/>
         <page name='Untitled Page 23'/>
-				<page name='Error Handling'/>
+        <page name='Untitled Page 24'/>
         <page name='Untitled Page 25'/>
-				<page name='Hashable Types'/>
+        <page name='Untitled Page 26'/>
+        <page name='Untitled Page 27'/>
         <page name='Untitled Page 28'/>
     </pages>
 </playground>
