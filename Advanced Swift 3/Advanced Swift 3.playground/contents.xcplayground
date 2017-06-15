@@ -9,7 +9,8 @@
         <page name='Protocols and Generics Challenge'/>
         <page name='Values and References'/>
         <page name='Values and References Challenge'/>
-        <page name='Untitled Page 9'/>
+        <page name='Implementing Copy-on-Write'/>
+        <page name='Implementing Copy-on-Write Challenge'/>
         <page name='Untitled Page 10'/>
         <page name='Untitled Page 11'/>
         <page name='Untitled Page 12'/>
@@ -28,6 +29,5 @@
         <page name='Untitled Page 25'/>
         <page name='Untitled Page 26'/>
         <page name='Untitled Page 27'/>
-        <page name='Untitled Page 28'/>
     </pages>
 </playground>
