@@ -63,6 +63,48 @@
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZQ2-PH-j6A">
+            <objects>
+                <viewController id="9OA-bh-cJ6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aS2-JG-ONM"/>
+                        <viewControllerLayoutGuide type="bottom" id="mHW-qo-kFu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YuV-Yr-0a2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1zl-9I-YlV">
+                                <rect key="frame" x="105" y="28" width="165.5" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfd-mR-7Kc">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.38431372549999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-cr-xhr">
+                                        <rect key="frame" x="66" y="0.0" width="33.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-id-LX2">
+                                        <rect key="frame" x="119.5" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.38431372549999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2J-GN-DwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="146"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="1366" height="1366"/>
