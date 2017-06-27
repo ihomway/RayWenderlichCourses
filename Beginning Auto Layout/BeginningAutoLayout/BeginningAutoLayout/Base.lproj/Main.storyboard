@@ -28,10 +28,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-M8-DqU">
-                                <rect key="frame" x="76" y="264" width="223" height="139"/>
+                                <rect key="frame" x="16" y="264" width="343" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNP-kb-Ldf">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <state key="normal" title="Treasure Map" backgroundImage="button">
@@ -39,18 +39,18 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-lL-ghe">
-                                        <rect key="frame" x="0.0" y="49" width="223" height="41"/>
+                                        <rect key="frame" x="0.0" y="49" width="343" height="41"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <state key="normal" title="Weather Forecast" backgroundImage="button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uQQ-t7-4eK">
-                                        <rect key="frame" x="0.0" y="98" width="223" height="41"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uQQ-t7-4eK">
+                                        <rect key="frame" x="0.0" y="98" width="343" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycR-hg-AmL">
-                                                <rect key="frame" x="0.0" y="0.0" width="136" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="41"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Privacy Policy" backgroundImage="button">
@@ -58,7 +58,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ip-rT-8Fr">
-                                                <rect key="frame" x="156" y="0.0" width="67" height="41"/>
+                                                <rect key="frame" x="181.5" y="0.0" width="161.5" height="41"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="FQAs" backgroundImage="button">
@@ -72,8 +72,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XfD-M8-DqU" secondAttribute="trailing" id="IM6-Xb-6vY"/>
                             <constraint firstItem="XfD-M8-DqU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S4W-Xy-mdJ"/>
-                            <constraint firstItem="XfD-M8-DqU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfo-4C-3M0"/>
+                            <constraint firstItem="XfD-M8-DqU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="swl-Ne-var"/>
                         </constraints>
                     </view>
                 </viewController>
