@@ -162,8 +162,26 @@
                     <view key="view" contentMode="scaleToFill" id="Brn-eS-as5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-fw-jFh">
+                                <rect key="frame" x="87.5" y="283" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" placeholder="YES" id="1dJ-0s-O8k"/>
+                                    <constraint firstAttribute="height" constant="100" placeholder="YES" id="d0S-oB-gVj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="centerY" secondItem="Brn-eS-as5" secondAttribute="centerY" id="2vx-l8-Gx5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LZ2-fw-jFh" secondAttribute="trailing" id="Axi-8s-X6B"/>
+                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Brn-eS-as5" secondAttribute="leading" id="Quf-4g-LCr"/>
+                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="centerX" secondItem="Brn-eS-as5" secondAttribute="centerX" id="Z56-nB-gLn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackView" destination="LZ2-fw-jFh" id="mIP-JT-VkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNv-5z-28J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
