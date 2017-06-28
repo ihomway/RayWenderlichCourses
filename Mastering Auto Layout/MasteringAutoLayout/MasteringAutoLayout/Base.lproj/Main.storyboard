@@ -78,11 +78,13 @@
                         <constraints>
                             <constraint firstItem="DbB-W9-GuM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0bj-WJ-Eti"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DbB-W9-GuM" secondAttribute="trailing" priority="750" id="HXD-O0-0Tc"/>
-                            <constraint firstItem="DbB-W9-GuM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PLa-aM-ONd"/>
                             <constraint firstItem="DbB-W9-GuM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xkL-Ig-Ulr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l5r-Ba-sat"/>
+                    <connections>
+                        <outlet property="buttonStackView" destination="DbB-W9-GuM" id="piC-ga-MVH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,19 +173,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ksO-d5-Q16">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n93-14-OaN">
+                                <rect key="frame" x="105" y="340.66666666666669" width="205" height="55"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="weather-sun" translatesAutoresizingMaskIntoConstraints="NO" id="YUE-bk-7Pb">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="weather-windy" translatesAutoresizingMaskIntoConstraints="NO" id="g55-3L-8LF">
+                                        <rect key="frame" x="75" y="0.0" width="55" height="55"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="weather-thunderstorm" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-7a-aoh">
+                                        <rect key="frame" x="150" y="0.0" width="55" height="55"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ksO-d5-Q16">
+                                <rect key="frame" x="0.0" y="-630" width="1366" height="1366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oOe-pi-l8M" firstAttribute="top" secondItem="ksO-d5-Q16" secondAttribute="bottom" id="7Pq-jY-OL1"/>
-                            <constraint firstItem="ksO-d5-Q16" firstAttribute="top" secondItem="4lq-Dh-UaF" secondAttribute="bottom" id="OMf-d1-z1J"/>
-                            <constraint firstItem="ksO-d5-Q16" firstAttribute="leading" secondItem="Brn-eS-as5" secondAttribute="leading" id="Tkp-S7-Vvv"/>
-                            <constraint firstAttribute="trailing" secondItem="ksO-d5-Q16" secondAttribute="trailing" id="gAO-ZL-6uy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n93-14-OaN" secondAttribute="trailing" priority="249" id="D6f-Xs-TTi"/>
+                            <constraint firstItem="n93-14-OaN" firstAttribute="leading" secondItem="Brn-eS-as5" secondAttribute="leadingMargin" priority="249" id="NMN-59-RqO"/>
+                            <constraint firstItem="n93-14-OaN" firstAttribute="centerX" secondItem="Brn-eS-as5" secondAttribute="centerX" id="Zwh-I4-1k9"/>
+                            <constraint firstItem="oOe-pi-l8M" firstAttribute="top" secondItem="n93-14-OaN" secondAttribute="bottom" priority="249" id="izQ-X8-bzQ"/>
+                            <constraint firstItem="n93-14-OaN" firstAttribute="top" secondItem="4lq-Dh-UaF" secondAttribute="bottom" priority="249" id="lhc-Kj-mhf"/>
+                            <constraint firstItem="n93-14-OaN" firstAttribute="centerY" secondItem="Brn-eS-as5" secondAttribute="centerY" id="x8j-Fo-lvk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Caribbean Weather Forecast" id="nyI-7x-vkc"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="ksO-d5-Q16" id="2U9-Wy-jqG"/>
+                        <outlet property="stackView" destination="n93-14-OaN" id="M9p-ko-nzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNv-5z-28J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,5 +426,8 @@
         <image name="background" width="1366" height="1366"/>
         <image name="button" width="44" height="40"/>
         <image name="map" width="2500" height="2500"/>
+        <image name="weather-sun" width="55" height="55"/>
+        <image name="weather-thunderstorm" width="55" height="55"/>
+        <image name="weather-windy" width="55" height="55"/>
     </resources>
 </document>
