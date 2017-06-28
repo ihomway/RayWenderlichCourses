@@ -14,19 +14,19 @@ class MapViewController: UIViewController {
 	@IBOutlet weak var desiredYConstraint: NSLayoutConstraint!
 	@IBOutlet weak var marker: UIView!
 	@IBOutlet weak var markerImageView: UIImageView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		// Do any additional setup after loading the view.
+	}
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+	
+	
 	func decideArrowOrX() {
 		// 1
 		let currentPoint = marker.frame.origin
@@ -40,11 +40,10 @@ class MapViewController: UIViewController {
 			markerImageView.image = UIImage(named: "arrow")
 			// 4
 			let angle = angleBetween(currentPoint, desiredPoint)
-			markerImageView.transform =
-    CGAffineTransform(rotationAngle: angle)
+			markerImageView.transform = CGAffineTransform(rotationAngle: angle)
 		}
 	}
-
+	
 	func angleBetween(_ firstPoint: CGPoint, _ secondPoint: CGPoint) -> CGFloat {
 		let deltaX = secondPoint.x - firstPoint.x
 		let deltaY = secondPoint.y - firstPoint.y

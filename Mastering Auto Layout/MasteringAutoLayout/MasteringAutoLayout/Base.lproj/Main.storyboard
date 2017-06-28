@@ -40,6 +40,9 @@
                                         <rect key="frame" x="0.0" y="58" width="343" height="50"/>
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <state key="normal" title="Weather Forecast" backgroundImage="button"/>
+                                        <connections>
+                                            <segue destination="noN-ry-pl4" kind="presentation" id="mN8-27-LTg"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X7y-jh-kMv">
                                         <rect key="frame" x="0.0" y="116" width="343" height="50"/>
@@ -147,6 +150,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoi-u4-qww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="8PM-7S-pcd">
+            <objects>
+                <viewController id="noN-ry-pl4" customClass="WeatherViewController" customModule="MasteringAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4lq-Dh-UaF"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOe-pi-l8M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Brn-eS-as5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNv-5z-28J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="139"/>
         </scene>
     </scenes>
     <resources>
