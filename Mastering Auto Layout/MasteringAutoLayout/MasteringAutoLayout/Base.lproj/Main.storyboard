@@ -51,6 +51,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="Privacy Policy" backgroundImage="button"/>
+                                                <connections>
+                                                    <segue destination="Qck-gE-L1D" kind="presentation" id="Vwt-o3-DzV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inG-K9-BaV">
                                                 <rect key="frame" x="175.5" y="0.0" width="167.5" height="50"/>
@@ -162,30 +165,30 @@
                     <view key="view" contentMode="scaleToFill" id="Brn-eS-as5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-fw-jFh">
-                                <rect key="frame" x="87.5" y="283" width="200" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" placeholder="YES" id="1dJ-0s-O8k"/>
-                                    <constraint firstAttribute="height" constant="100" placeholder="YES" id="d0S-oB-gVj"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="centerY" secondItem="Brn-eS-as5" secondAttribute="centerY" id="2vx-l8-Gx5"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LZ2-fw-jFh" secondAttribute="trailing" id="Axi-8s-X6B"/>
-                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Brn-eS-as5" secondAttribute="leading" id="Quf-4g-LCr"/>
-                            <constraint firstItem="LZ2-fw-jFh" firstAttribute="centerX" secondItem="Brn-eS-as5" secondAttribute="centerX" id="Z56-nB-gLn"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="stackView" destination="LZ2-fw-jFh" id="mIP-JT-VkC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNv-5z-28J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1825" y="139"/>
+        </scene>
+        <!--Testing View Controller-->
+        <scene sceneID="Y5A-9e-Zwy">
+            <objects>
+                <viewController id="Qck-gE-L1D" customClass="TestingViewController" customModule="MasteringAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQt-c4-C9F"/>
+                        <viewControllerLayoutGuide type="bottom" id="vCg-yX-F0R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dl4-Wf-rNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HW-8G-Ro7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="815"/>
         </scene>
     </scenes>
     <resources>

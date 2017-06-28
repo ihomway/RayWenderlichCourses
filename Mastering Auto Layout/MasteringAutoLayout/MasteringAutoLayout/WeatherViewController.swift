@@ -12,18 +12,11 @@ class WeatherViewController: UIViewController {
 	let daysToForecast = 3
 	let gap: CGFloat = 8.0
 	var imageViews: [UIImageView] = []
-	@IBOutlet weak var stackView: UIStackView?
-//	var containerGuide = UILayoutGuide()
-//	var spacerGuides: [UILayoutGuide] = []
-//	var imageConstraints: [NSLayoutConstraint] = []
-	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		// Do any additional setup after loading the view.
-//		containerGuide.identifier = "container"
-//		view.addLayoutGuide(containerGuide)
 		
 		for day in 0..<daysToForecast {
 			let weatherImage: UIImageView
@@ -39,76 +32,25 @@ class WeatherViewController: UIViewController {
 			}
 			
 			weatherImage.translatesAutoresizingMaskIntoConstraints = false
-//			view.addSubview(weatherImage)
-			stackView?.addArrangedSubview(weatherImage)
+			view.addSubview(weatherImage)
 			imageViews.append(weatherImage)
-			
-//			if day > 0 {
-//				let spacer = UILayoutGuide()
-//				spacer.identifier = "spacer\(day)"
-//				view.addLayoutGuide(spacer)
-//				spacerGuides.append(spacer)
-//			}
 		}
 		
-//		setupImageConstraints(forSize: view.bounds.size)
 		for imageView in imageViews {
-			imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor).isActive = true
+			imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor).isActive = true
 		}
 		
-		stackView?.distribution = .fillEqually
-		stackView?.spacing = 8
+		var constraints = [NSLayoutConstraint]()
+		let leftGap = UILayoutGuide()
+		view.addLayoutGuide(leftGap)
+		let rightGap = UILayoutGuide()
+		view.addLayoutGuide(rightGap)
+		
+		let imageWidth = imageViews[0].image!.size.width
+		let views: [String: Any] = ["monday": imageViews[0], "tuesday": imageViews[1], "wednesday": imageViews[2], "leftGap": leftGap, "rightGap": rightGap]
+		let metrics = ["fullWidth": imageWidth, "smaller": imageWidth * 0.7, "bigGap": gap * 3, "gap": gap]
+		constraints.append(contentsOf: NSLayoutConstraint.constraints(withVisualFormat: "H:|[leftGap]-[monday(fullWidth@849)]-(bigGap)-[tuesday(smaller@849)]-(gap)-[wednesday(smaller@849)]-(gap)-[rightGap(==leftGap)]|", options: .alignAllCenterY, metrics: metrics, views: views))
+		constraints.append(imageViews[0].centerYAnchor.constraint(equalTo: view.centerYAnchor))
+		NSLayoutConstraint.activate(constraints)
 	}
-	
-//	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//		super.viewWillTransition(to: size, with: coordinator)
-//		
-//		setupImageConstraints(forSize: size)
-//	}
-	
-//	func setupImageConstraints(forSize size: CGSize) {
-//		NSLayoutConstraint.deactivate(imageConstraints)
-//		imageConstraints.removeAll()
-//		
-//		var firstImageView: UIImageView?
-//		var firstSpacer: UILayoutGuide?
-//		var previousAnchor = containerGuide.leadingAnchor
-//		
-//		for day in 0..<daysToForecast {
-//			let imageView = imageViews[day]
-//			imageConstraints.append(imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor))
-//			imageConstraints.append(imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor))
-//			
-//			if let firstImageView = firstImageView {
-//				imageConstraints.append(imageView.widthAnchor.constraint(equalTo: firstImageView.widthAnchor))
-//			} else {
-//				firstImageView = imageView
-//			}
-//			
-//			imageConstraints.append(imageView.leadingAnchor.constraint(equalTo: previousAnchor))
-//			if day < daysToForecast - 1 {
-//				let trailingSpacer = spacerGuides[day]
-//				imageConstraints.append(imageView.trailingAnchor.constraint(equalTo: trailingSpacer.leadingAnchor))
-//				if let firstSpacer = firstSpacer {
-//					imageConstraints.append(trailingSpacer.widthAnchor.constraint(equalTo: firstSpacer.widthAnchor))
-//				} else {
-//					firstSpacer = trailingSpacer
-//					let spacerWidthConstraint = trailingSpacer.widthAnchor.constraint(equalToConstant: gap)
-//					spacerWidthConstraint.priority = 749
-//					imageConstraints.append(spacerWidthConstraint)
-//				}
-//				previousAnchor = trailingSpacer.trailingAnchor
-//			} else {
-//				imageConstraints.append(imageView.trailingAnchor.constraint(equalTo: containerGuide.trailingAnchor))
-//				previousAnchor = imageView.trailingAnchor
-//			}
-//		}
-//		
-//		imageConstraints.append(containerGuide.centerXAnchor.constraint(equalTo: view.centerXAnchor))
-//		imageConstraints.append(containerGuide.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor))
-//		imageConstraints.append(containerGuide.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor))
-//		
-//		NSLayoutConstraint.activate(imageConstraints)
-//	}
-	
 }

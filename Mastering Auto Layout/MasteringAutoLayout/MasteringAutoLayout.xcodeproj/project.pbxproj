@@ -16,6 +16,7 @@
 		CD7A574D1F0252AB00FF7E04 /* MasteringAutoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A574C1F0252AB00FF7E04 /* MasteringAutoLayoutUITests.swift */; };
 		CD7A575B1F02617100FF7E04 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A575A1F02617100FF7E04 /* MapViewController.swift */; };
 		CD7A57631F037F0400FF7E04 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */; };
+		CD7A576F1F039CA800FF7E04 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CD7A574E1F0252AB00FF7E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7A575A1F02617100FF7E04 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CD7A57381F0252AA00FF7E04 /* Info.plist */,
 				CD7A575A1F02617100FF7E04 /* MapViewController.swift */,
 				CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */,
+				CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */,
 			);
 			path = MasteringAutoLayout;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				CD7A57631F037F0400FF7E04 /* WeatherViewController.swift in Sources */,
 				CD7A575B1F02617100FF7E04 /* MapViewController.swift in Sources */,
 				CD7A572D1F0252AA00FF7E04 /* AppDelegate.swift in Sources */,
+				CD7A576F1F039CA800FF7E04 /* TestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
