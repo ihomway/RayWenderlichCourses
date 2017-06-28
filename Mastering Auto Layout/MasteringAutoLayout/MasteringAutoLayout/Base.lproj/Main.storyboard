@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="thN-BU-ZXf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cr0-wG-RyV">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -35,7 +35,7 @@
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <state key="normal" title="Treasure Map" backgroundImage="button"/>
                                         <connections>
-                                            <segue destination="kFZ-Sv-Fxh" kind="presentation" id="Nk3-Rv-gQA"/>
+                                            <segue destination="kFZ-Sv-Fxh" kind="show" id="Nk3-Rv-gQA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-2k-ngU">
@@ -43,7 +43,7 @@
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <state key="normal" title="Weather Forecast" backgroundImage="button"/>
                                         <connections>
-                                            <segue destination="noN-ry-pl4" kind="presentation" id="mN8-27-LTg"/>
+                                            <segue destination="noN-ry-pl4" kind="show" id="mN8-27-LTg"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X7y-jh-kMv">
@@ -82,12 +82,13 @@
                             <constraint firstItem="DbB-W9-GuM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xkL-Ig-Ulr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="l5r-Ba-sat"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="139"/>
+            <point key="canvasLocation" x="1284.0579710144928" y="138.58695652173915"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Secret Map-->
         <scene sceneID="qXO-6P-aaV">
             <objects>
                 <viewController id="kFZ-Sv-Fxh" customClass="MapViewController" customModule="MasteringAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,6 +147,7 @@
                             <constraint firstItem="mSh-cs-1pV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Frc-vD-PXA" secondAttribute="bottom" id="xvf-8A-gto"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Secret Map" id="qSP-OU-4Kk"/>
                     <connections>
                         <outlet property="desiredXConstraint" destination="7m9-hq-9p5" id="lFg-YD-YOR"/>
                         <outlet property="desiredYConstraint" destination="a4X-wE-rhi" id="EGO-Dx-esx"/>
@@ -155,12 +157,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoi-u4-qww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965.60000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2197.1014492753625" y="-194.02173913043481"/>
         </scene>
-        <!--Weather View Controller-->
+        <!--Caribbean Weather Forecast-->
         <scene sceneID="8PM-7S-pcd">
             <objects>
-                <viewController id="noN-ry-pl4" customClass="WeatherViewController" customModule="MasteringAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherViewController" id="noN-ry-pl4" customClass="WeatherViewController" customModule="MasteringAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4lq-Dh-UaF"/>
                         <viewControllerLayoutGuide type="bottom" id="oOe-pi-l8M"/>
@@ -168,12 +170,24 @@
                     <view key="view" contentMode="scaleToFill" id="Brn-eS-as5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ksO-d5-Q16">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oOe-pi-l8M" firstAttribute="top" secondItem="ksO-d5-Q16" secondAttribute="bottom" id="7Pq-jY-OL1"/>
+                            <constraint firstItem="ksO-d5-Q16" firstAttribute="top" secondItem="4lq-Dh-UaF" secondAttribute="bottom" id="OMf-d1-z1J"/>
+                            <constraint firstItem="ksO-d5-Q16" firstAttribute="leading" secondItem="Brn-eS-as5" secondAttribute="leading" id="Tkp-S7-Vvv"/>
+                            <constraint firstAttribute="trailing" secondItem="ksO-d5-Q16" secondAttribute="trailing" id="gAO-ZL-6uy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Caribbean Weather Forecast" id="nyI-7x-vkc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNv-5z-28J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="139"/>
+            <point key="canvasLocation" x="2197.1014492753625" y="473.64130434782612"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KcA-bY-aw6">
@@ -270,16 +284,6 @@
                                 <exclude reference="i08-eQ-zN4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4TO-4g-ij9"/>
-                                <exclude reference="Yec-Bl-tUk"/>
-                                <exclude reference="ZkD-UD-cc1"/>
-                                <exclude reference="tbh-hM-iqx"/>
-                                <exclude reference="xNX-me-Owf"/>
-                                <exclude reference="z0V-Wi-lNj"/>
-                                <exclude reference="B0v-Bk-G2S"/>
-                                <exclude reference="V1g-FS-MKZ"/>
-                                <exclude reference="rdh-HT-jwr"/>
-                                <exclude reference="whS-rk-VSs"/>
                                 <exclude reference="12y-Ur-S4P"/>
                                 <exclude reference="3Qa-T6-2us"/>
                                 <exclude reference="HfV-JU-U5D"/>
@@ -288,15 +292,25 @@
                                 <exclude reference="hs5-aa-6be"/>
                                 <exclude reference="nYv-iu-2ly"/>
                                 <exclude reference="wDb-hG-eTk"/>
-                                <exclude reference="3Ba-dT-mZ4"/>
-                                <exclude reference="58B-W2-GTh"/>
-                                <exclude reference="pgO-m5-6Wc"/>
+                                <exclude reference="4TO-4g-ij9"/>
+                                <exclude reference="Yec-Bl-tUk"/>
+                                <exclude reference="ZkD-UD-cc1"/>
+                                <exclude reference="tbh-hM-iqx"/>
+                                <exclude reference="xNX-me-Owf"/>
+                                <exclude reference="z0V-Wi-lNj"/>
                                 <exclude reference="IuY-iV-QnQ"/>
                                 <exclude reference="M9m-WQ-NNd"/>
                                 <exclude reference="OKn-Jd-rlr"/>
                                 <exclude reference="Orn-4S-5pV"/>
                                 <exclude reference="r7G-Tw-VpU"/>
                                 <exclude reference="xkT-Ca-XYH"/>
+                                <exclude reference="B0v-Bk-G2S"/>
+                                <exclude reference="V1g-FS-MKZ"/>
+                                <exclude reference="rdh-HT-jwr"/>
+                                <exclude reference="whS-rk-VSs"/>
+                                <exclude reference="3Ba-dT-mZ4"/>
+                                <exclude reference="58B-W2-GTh"/>
+                                <exclude reference="pgO-m5-6Wc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -304,17 +318,17 @@
                                 <include reference="i08-eQ-zN4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4TO-4g-ij9"/>
-                                <include reference="Yec-Bl-tUk"/>
-                                <include reference="tbh-hM-iqx"/>
-                                <include reference="B0v-Bk-G2S"/>
                                 <include reference="12y-Ur-S4P"/>
                                 <include reference="3Qa-T6-2us"/>
                                 <include reference="HfV-JU-U5D"/>
                                 <include reference="Taz-Ii-bqg"/>
+                                <include reference="4TO-4g-ij9"/>
+                                <include reference="Yec-Bl-tUk"/>
+                                <include reference="tbh-hM-iqx"/>
                                 <include reference="OKn-Jd-rlr"/>
                                 <include reference="Orn-4S-5pV"/>
                                 <include reference="r7G-Tw-VpU"/>
+                                <include reference="B0v-Bk-G2S"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -323,29 +337,29 @@
                                 <include reference="i08-eQ-zN4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ZkD-UD-cc1"/>
-                                <include reference="xNX-me-Owf"/>
-                                <include reference="z0V-Wi-lNj"/>
-                                <include reference="V1g-FS-MKZ"/>
-                                <include reference="rdh-HT-jwr"/>
-                                <include reference="whS-rk-VSs"/>
                                 <include reference="brm-om-NRq"/>
                                 <include reference="hs5-aa-6be"/>
                                 <include reference="nYv-iu-2ly"/>
                                 <include reference="wDb-hG-eTk"/>
-                                <include reference="3Ba-dT-mZ4"/>
-                                <include reference="58B-W2-GTh"/>
-                                <include reference="pgO-m5-6Wc"/>
+                                <include reference="ZkD-UD-cc1"/>
+                                <include reference="xNX-me-Owf"/>
+                                <include reference="z0V-Wi-lNj"/>
                                 <include reference="IuY-iV-QnQ"/>
                                 <include reference="M9m-WQ-NNd"/>
                                 <include reference="xkT-Ca-XYH"/>
+                                <include reference="V1g-FS-MKZ"/>
+                                <include reference="rdh-HT-jwr"/>
+                                <include reference="whS-rk-VSs"/>
+                                <include reference="3Ba-dT-mZ4"/>
+                                <include reference="58B-W2-GTh"/>
+                                <include reference="pgO-m5-6Wc"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1M-4T-HzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961.95652173913049" y="840.57971014492762"/>
+            <point key="canvasLocation" x="864" y="1361"/>
         </scene>
         <!--Testing View Controller-->
         <scene sceneID="Y5A-9e-Zwy">
@@ -363,11 +377,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2HW-8G-Ro7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="815"/>
+            <point key="canvasLocation" x="1890" y="1131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="69h-eu-McZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cr0-wG-RyV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nug-r5-ihz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BXy-tS-ixE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTJ-W9-4oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="139"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow" width="67" height="67"/>
+        <image name="background" width="1366" height="1366"/>
         <image name="button" width="44" height="40"/>
         <image name="map" width="2500" height="2500"/>
     </resources>

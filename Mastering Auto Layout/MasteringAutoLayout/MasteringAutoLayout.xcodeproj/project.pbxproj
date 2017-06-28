@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD769DA61F03F637009DCE68 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD769DA51F03F637009DCE68 /* AppearanceManager.swift */; };
 		CD7A572D1F0252AA00FF7E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A572C1F0252AA00FF7E04 /* AppDelegate.swift */; };
 		CD7A572F1F0252AA00FF7E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A572E1F0252AA00FF7E04 /* ViewController.swift */; };
 		CD7A57321F0252AA00FF7E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7A57301F0252AA00FF7E04 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD769DA51F03F637009DCE68 /* AppearanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
 		CD7A57291F0252AA00FF7E04 /* MasteringAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasteringAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7A572C1F0252AA00FF7E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7A572E1F0252AA00FF7E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				CD7A575A1F02617100FF7E04 /* MapViewController.swift */,
 				CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */,
 				CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */,
+				CD769DA51F03F637009DCE68 /* AppearanceManager.swift */,
 			);
 			path = MasteringAutoLayout;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7A572F1F0252AA00FF7E04 /* ViewController.swift in Sources */,
+				CD769DA61F03F637009DCE68 /* AppearanceManager.swift in Sources */,
 				CD7A57631F037F0400FF7E04 /* WeatherViewController.swift in Sources */,
 				CD7A575B1F02617100FF7E04 /* MapViewController.swift in Sources */,
 				CD7A572D1F0252AA00FF7E04 /* AppDelegate.swift in Sources */,
