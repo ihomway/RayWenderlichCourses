@@ -12,6 +12,9 @@ class DictionaryViewController: UITableViewController {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		
+		modalPresentationStyle = .popover
+		popoverPresentationController?.delegate = self
+		
 		let rightButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(DictionaryViewController.dismissAction))
 		self.navigationItem.rightBarButtonItem = rightButtonItem
 		
@@ -28,5 +31,13 @@ class DictionaryViewController: UITableViewController {
 extension DictionaryViewController: UIPopoverPresentationControllerDelegate {
 	func presentationController(_ controller: UIPresentationController, viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController? {
 		return UINavigationController(rootViewController: controller.presentedViewController)
+	}
+	
+	func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+		if traitCollection.verticalSizeClass == .regular {
+			return .none
+		} else {
+			return .fullScreen
+		}
 	}
 }
