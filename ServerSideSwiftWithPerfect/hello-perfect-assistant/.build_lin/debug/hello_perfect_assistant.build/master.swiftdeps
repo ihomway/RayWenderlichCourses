@@ -1,0 +1,5 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "0ebf3946eaa5fac766402bb14079e375"
+build_time: [552041075, 677671000]
+inputs:
+  "/perfectbuild/Sources/main.swift": [552035888, 0]
