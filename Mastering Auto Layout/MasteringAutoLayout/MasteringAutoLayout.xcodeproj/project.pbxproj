@@ -18,6 +18,7 @@
 		CD7A575B1F02617100FF7E04 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A575A1F02617100FF7E04 /* MapViewController.swift */; };
 		CD7A57631F037F0400FF7E04 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */; };
 		CD7A576F1F039CA800FF7E04 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */; };
+		CD7A57711F04A59400FF7E04 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A57701F04A59400FF7E04 /* DictionaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CD7A575A1F02617100FF7E04 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		CD7A57701F04A59400FF7E04 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				CD7A57621F037F0400FF7E04 /* WeatherViewController.swift */,
 				CD7A576E1F039CA800FF7E04 /* TestingViewController.swift */,
 				CD769DA51F03F637009DCE68 /* AppearanceManager.swift */,
+				CD7A57701F04A59400FF7E04 /* DictionaryViewController.swift */,
 			);
 			path = MasteringAutoLayout;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				CD7A57631F037F0400FF7E04 /* WeatherViewController.swift in Sources */,
 				CD7A575B1F02617100FF7E04 /* MapViewController.swift in Sources */,
 				CD7A572D1F0252AA00FF7E04 /* AppDelegate.swift in Sources */,
+				CD7A57711F04A59400FF7E04 /* DictionaryViewController.swift in Sources */,
 				CD7A576F1F039CA800FF7E04 /* TestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihomway.MasteringAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -450,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ihomway.MasteringAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

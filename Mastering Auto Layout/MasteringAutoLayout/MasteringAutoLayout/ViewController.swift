@@ -8,6 +8,10 @@
 
 import UIKit
 
+private extension String {
+	static let dictionary = "Dictionary"
+}
+
 class ViewController: UIViewController {
 
 	 @IBOutlet var buttonStackView: UIStackView!
@@ -73,6 +77,12 @@ class ViewController: UIViewController {
 		weatherViewController.view.removeFromSuperview()
 		weatherViewController.removeFromParentViewController()
 		self.weatherViewController = nil
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == .dictionary {
+			segue.destination.popoverPresentationController?.delegate = segue.destination as? DictionaryViewController
+		}
 	}
 
 }
