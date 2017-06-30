@@ -1,0 +1,21 @@
+version: "Swift version 3.1.1 (swift-3.1.1-RELEASE)"
+options: "136b0477b78abf7031dca7fe117138f6"
+build_time: [552106990, 101099000]
+inputs:
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTPContentCompression.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTPServer.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTPServerEx.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP11/HTTP11Request.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP11/HTTP11Response.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HPACK.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2Client.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2Frame.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2FrameReader.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2FrameWriter.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2PrefaceValidator.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2Request.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2Response.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2Session.swift": [9223372036854775807, 0]
+  "/perfectbuild/.build/checkouts/Perfect-HTTPServer.git-2017663865027867621/Sources/PerfectHTTPServer/HTTP2/HTTP2SessionSettings.swift": [9223372036854775807, 0]

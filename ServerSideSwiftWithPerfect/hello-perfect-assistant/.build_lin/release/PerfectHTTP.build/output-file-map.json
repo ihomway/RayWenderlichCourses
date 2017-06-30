@@ -1,0 +1,52 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/PerfectHTTP.d",
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/PerfectHTTP.o",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/master.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/HTTPFilter.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPFilter.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPFilter~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPFilter.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/HTTPHeaders.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPHeaders.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPHeaders~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPHeaders.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/HTTPMethod.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPMethod.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPMethod~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPMethod.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/HTTPRequest.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPRequest.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPRequest~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPRequest.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/HTTPResponse.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPResponse.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPResponse~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/HTTPResponse.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/MimeReader.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/MimeReader.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/MimeReader~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/MimeReader.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/MimeType.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/MimeType.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/MimeType~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/MimeType.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/Routing.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/Routing.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/Routing~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/Routing.swiftdeps"
+  },
+  "/perfectbuild/.build/checkouts/Perfect-HTTP.git--5559342969438674872/Sources/StaticFileHandler.swift": {
+    "object": "/perfectbuild/.build/release/PerfectHTTP.build/StaticFileHandler.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/PerfectHTTP.build/StaticFileHandler~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/PerfectHTTP.build/StaticFileHandler.swiftdeps"
+  }
+}

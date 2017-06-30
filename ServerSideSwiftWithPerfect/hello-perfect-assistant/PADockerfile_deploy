@@ -1,0 +1,5 @@
+FROM perfectassistant/hello-perfect-assistant:latest
+COPY .build_lin/release/*.so /perfect-deployed/hello-perfect-assistant/
+COPY .build_lin/release/hello-perfect-assistant /perfect-deployed/hello-perfect-assistant/
+RUN rm -rf /var/lib/apt/lists/*
+CMD cd /perfect-deployed/hello-perfect-assistant/ && ./hello-perfect-assistant

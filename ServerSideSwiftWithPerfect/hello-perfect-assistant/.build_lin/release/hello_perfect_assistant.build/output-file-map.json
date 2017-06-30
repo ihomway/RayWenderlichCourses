@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build/release/hello_perfect_assistant.build/hello_perfect_assistant.d",
+    "object": "/perfectbuild/.build/release/hello_perfect_assistant.build/hello_perfect_assistant.o",
+    "swift-dependencies": "/perfectbuild/.build/release/hello_perfect_assistant.build/master.swiftdeps"
+  },
+  "/perfectbuild/Sources/main.swift": {
+    "object": "/perfectbuild/.build/release/hello_perfect_assistant.build/main.swift.o",
+    "swiftmodule": "/perfectbuild/.build/release/hello_perfect_assistant.build/main~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build/release/hello_perfect_assistant.build/main.swiftdeps"
+  }
+}
