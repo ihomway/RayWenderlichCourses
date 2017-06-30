@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 //		scrollView.contentSize = imageView.image!.size
 		imageView.frame.size = (imageView.image?.size)!
 		setZoomParametersForSize(scrollView.frame.size)
+		recenterImage()
 	}
 	
 	func setZoomParametersForSize(_ scrollViewSize: CGSize) {
@@ -33,13 +34,20 @@ class ViewController: UIViewController {
 		scrollView.zoomScale = minScale
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	func recenterImage() {
+		let sWidth = scrollView.bounds.width
+		let sHeight = scrollView.bounds.height
+		let iWidth = imageView.frame.width
+		let iHeight = imageView.frame.height
+		
+		let hSpace = sWidth > iWidth ?  (sWidth - iWidth) / 2 : 0
+		let vSpace = sHeight > iHeight ?  (sHeight - iHeight) / 2 : 0
+		scrollView.contentInset = UIEdgeInsetsMake(vSpace, hSpace, vSpace, hSpace)
 	}
 
 	override func viewDidLayoutSubviews() {
 		setZoomParametersForSize(scrollView.frame.size)
+		recenterImage()
 	}
 
 }
