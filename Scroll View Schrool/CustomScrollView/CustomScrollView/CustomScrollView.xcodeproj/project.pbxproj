@@ -15,6 +15,7 @@
 		CD40B6421F0644A70061C442 /* CustomScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40B6411F0644A70061C442 /* CustomScrollViewTests.swift */; };
 		CD40B64D1F0644A70061C442 /* CustomScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40B64C1F0644A70061C442 /* CustomScrollViewUITests.swift */; };
 		CD40B65B1F06460A0061C442 /* RWScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40B65A1F06460A0061C442 /* RWScrollView.swift */; };
+		CD40B65E1F06487E0061C442 /* Challenge1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40B65D1F06487E0061C442 /* Challenge1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CD40B64C1F0644A70061C442 /* CustomScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollViewUITests.swift; sourceTree = "<group>"; };
 		CD40B64E1F0644A80061C442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD40B65A1F06460A0061C442 /* RWScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWScrollView.swift; sourceTree = "<group>"; };
+		CD40B65D1F06487E0061C442 /* Challenge1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		CD40B62B1F0644A70061C442 /* CustomScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				CD40B65C1F0648690061C442 /* New Group */,
 				CD40B62C1F0644A70061C442 /* AppDelegate.swift */,
 				CD40B62E1F0644A70061C442 /* ViewController.swift */,
 				CD40B6301F0644A70061C442 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				CD40B64E1F0644A80061C442 /* Info.plist */,
 			);
 			path = CustomScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		CD40B65C1F0648690061C442 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CD40B65D1F06487E0061C442 /* Challenge1ViewController.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD40B65E1F06487E0061C442 /* Challenge1ViewController.swift in Sources */,
 				CD40B62F1F0644A70061C442 /* ViewController.swift in Sources */,
 				CD40B62D1F0644A70061C442 /* AppDelegate.swift in Sources */,
 				CD40B65B1F06460A0061C442 /* RWScrollView.swift in Sources */,
